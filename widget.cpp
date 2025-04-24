@@ -77,7 +77,7 @@ void Widget::on_pbReset_clicked()
     int change_50 = (money % 100) / 50;
     int change_10 = (money % 50) / 10;
 
-    mb.information(this, "Returned Change", QString("₩500 : %1 \n ₩100 : %2 \n ₩50 : %3 \n ₩10 : %4 \n --------- \n total : %5")
+    mb.information(this, "Returned Change", QString("₩ 500 : %1 \n ₩ 100 : %2 \n ₩ 50 : %3 \n ₩ 10 : %4 \n ---------- \n total : ₩ %5")
                                                 .arg(change_500).arg(change_100).arg(change_50).arg(change_10).arg(money));
     changeMoney(-money);
 }
