@@ -10,6 +10,7 @@ Widget::Widget(QWidget *parent)
     ui->pbCoffee->setEnabled(false);
     ui->pbTea->setEnabled(false);
     ui->pbCoke->setEnabled(false);
+    ui->pbReset->setEnabled(false);
 }
 
 Widget::~Widget()
@@ -24,6 +25,7 @@ void Widget::changeMoney(int diff){
     ui->pbCoffee->setEnabled(money >= 100);
     ui->pbTea->setEnabled(money >= 150);
     ui->pbCoke->setEnabled(money >= 200);
+    ui->pbReset->setEnabled(money > 0);
 }
 
 void Widget::on_pb10_clicked()
